@@ -1,0 +1,27 @@
+<html>
+
+	<head>
+		<title>Area of a Circle</title>
+	</head>
+	
+	<body>
+		<form>
+			Radius:<input type="text" id="rad" onkeyup="area()"/><br><br>
+			Area<p id="area"></p>
+		</form>
+		
+		<input type="button" value="Calculate" id="cal" onclick="area()">
+		<input type="button" value="Reset" id="res">
+		
+				
+	</body>
+	
+	 <script type="text/javascript">
+		 function area(){
+		 var r1=document.getElementById("rad").value;
+		 var a1=3.14*r1*r1;
+		 document.getElementById("area").innerHTML=a1;
+		 }
+	 </script>
+	
+</html>
